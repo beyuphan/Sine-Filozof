@@ -2,9 +2,6 @@
 
 Popüler olanı değil, ruhuna hitap edeni bul. Bu web uygulaması, Google Gemini'nin yaratıcı zekasını ve The Movie Database'in (TMDb) zengin veri tabanını kullanarak size kişiselleştirilmiş ve sıra dışı film önerileri sunar.
 
-🚀 Uygulamanın Canlı Hali
-
-📸 Ekran Görüntüsü
 
 ✨ Özellikler
 
