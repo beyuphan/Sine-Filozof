@@ -22,7 +22,6 @@ except KeyError:
 genai.configure(api_key=GEMINI_API_KEY)
 
 # --- HIZLANDIRMA (CACHING): API Fonksiyonları ---
-@st.cache_data(ttl="1h") # Sonuçları 1 saat boyunca hafızada tut
 def get_all_movie_data(movie_id):
     url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={TMDB_API_KEY}&language=tr-TR&append_to_response=videos,credits,watch/providers"
     try:
@@ -32,7 +31,6 @@ def get_all_movie_data(movie_id):
     except requests.exceptions.RequestException:
         return None
 
-@st.cache_data(ttl="1h")
 def search_movie_by_title(title):
     url = f"https://api.themoviedb.org/3/search/movie?api_key={TMDB_API_KEY}&query={title}&language=tr-TR"
     try:
