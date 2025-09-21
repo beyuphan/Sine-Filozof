@@ -43,7 +43,6 @@ def search_movie_by_title(title):
     except requests.exceptions.RequestException:
         return None
 
-@st.cache_data(ttl="1h")
 def get_gemini_response(prompt):
     model = genai.GenerativeModel('gemini-1.5-flash-latest')
     response = model.generate_content(prompt)
